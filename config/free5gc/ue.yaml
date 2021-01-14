@@ -1,0 +1,29 @@
+# IMSI number of the UE. IMSI = [MCC|MNC|MSISDN] (In total 15 or 16 digits)
+supi: 'imsi-466920100002587'
+
+# MCC and MNC values of the UE.
+plmn:
+  mcc: 466
+  mnc: 92
+
+# Permanent subscription key.
+key: '12345678901234567890123456789012'
+
+# Operator code (OP) of the UE. Please note that 'OP' is different from 'OPC'.
+op: '12345678901234561234567890123456'
+
+# Authentication Management Field (AMF) value
+amf: '8000'
+
+# IMEI number of the device. This value is generally not used.
+imei: '1031014000012000'
+
+# Domain Network Name (DNN)
+dnn: 'internet'
+
+# List of NSSAIs for the UE
+requestedNssai:
+  - sst:
+      hex: '01'
+    sd:
+      hex: '010203'

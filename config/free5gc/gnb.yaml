@@ -1,0 +1,32 @@
+# MCC and MNC values of the gNB
+plmn:
+  mcc: 466
+  mnc: 92
+
+# ID of the gNB inside of its PLMN
+gnbId: 1
+
+# Tracking Area Code (TAC)
+tac: 81
+
+# NR Cell Identity (NCI)
+nci: '0000000100'
+
+# gNB's local IP address for N2 interface.
+ngapIp: 172.17.0.2
+
+# gNB's local IP address for N3 interface.
+gtpIp: 172.17.0.2
+
+# List of AMF address information
+amfConfigs:
+  - ngapIp: 140.113.60.241
+    ngapPort: 38412
+
+# List of NSSAIs supported by this gNB
+nssais:
+  - sst: '0x01'
+    sd: '0x010203'
+
+# Indicates whether or not SCTP stream number errors should be ignored.
+ignoreStreamIds: true
