@@ -14,4 +14,8 @@ COPY --from=0 /UERANSIM/build/ /root/build/
 COPY --from=0 /UERANSIM/config/ /root/config/
 RUN ln -s /root/nr-cli /usr/local/bin
 
+LABEL maintainer="Wei-Yu Chen <weiyu_chen@edge-core.com>" \
+      ueransim_commit_id="b146a85" \
+      free5gc_version="3.0.4"
+
 CMD ["./nr-agent"]
